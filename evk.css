@@ -11,6 +11,7 @@
     --grey:#CACACA;
     --light-grey:#666666;
     --dark-grey:#414141;
+    --gap: 32px
 }
 
 * {
@@ -18,8 +19,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+body {
+    min-width: 320px;
+}
 
 h1 {
     margin: 0 !important;
@@ -45,6 +50,10 @@ h1 {
     padding-bottom: 14px;
     box-shadow: 0px 5px 40px 0px #0000001A;
     border-radius: 0 0 32px 32px;
+}
+
+.nav__logo {
+    margin-right: 12px;
 }
 
 .nav__left {
@@ -115,7 +124,6 @@ h1 {
 
 .nav__links{
     position: relative;
-    margin-right: 77px;
 }
 
 
@@ -238,7 +246,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 50px 50px;
+    padding: 52px 50px;
     border-radius: 32px;
     background: rgba(0, 0, 0, 0.4);
 }
@@ -254,7 +262,7 @@ h1 {
 .about__btn {
     position: relative;
     width: fit-content;
-    padding: 20px 38px;
+    padding: 17px 37px;
     border-radius: 16px;
     border: 3px solid var(--orange-main);
     background: rgba(0, 0, 0, 0);
@@ -340,7 +348,7 @@ h1 {
 }
 
 .stages__right {
-    width: 48%;
+    width: 49%;
     border-radius: 32px;
     overflow: hidden;
 }
@@ -446,16 +454,15 @@ h1 {
     border: 1px solid black;
 }
 
-
 .question__flex {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 32px;
+    gap: var(--gap);
+    /*width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 2)); */
 }
 
 .question__title {
-    margin-top: 15px;
+    margin-top: 100px;
     margin-bottom: 32px;
     font-weight: 400;
     font-size: 48px;
@@ -463,6 +470,8 @@ h1 {
 }
 
 .question__item {
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid var(--grey);
     border-radius: 32px;
     padding: 65px 60px;
@@ -496,7 +505,7 @@ h1 {
 }
 
 .footer__center {
-  
+    width: 32%;
 }
 
 .footer__chekbox {
@@ -557,10 +566,10 @@ h1 {
 
 .footer__first {
     background-color: var(--dark-grey);
-    padding: 14px 24px;
+    padding: 20px 24px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: var(--grey);
 }
 
@@ -593,10 +602,10 @@ h1 {
 
 .footer__second {
     background-color: var(--dark-grey) ;
-    padding: 14px 24px;
+    padding: 20px 24px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: var(--grey);
 }
 
@@ -628,7 +637,7 @@ h1 {
 .footer__end {
     background-color: var(--dark-grey) ;
     padding: 14px 24px;
-    height: 122px;
+    min-height: 158px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
     margin-bottom: 25px;
@@ -672,14 +681,14 @@ h1 {
     font-size: 48px;
     line-height: 58px;
     color: var(--grey);
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .footer__btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    margin-right: 32px;
+    margin-right: 12px;
     border: 1px solid var(--orange-main);
     background: var(--orange-main);
     color: var(--white);
@@ -711,12 +720,21 @@ h1 {
 .footer__chekbox {
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 17px;
     color: var(--white);
 }
 
+.footer__btnbox {
+    display: flex;
+}
+
+.footer__label {
+    display: flex;
+    align-items: center;
+}
+
 .footer__left {
-   
+    width: 20%;
 }
 
 .footer__logo {
@@ -728,8 +746,9 @@ h1 {
     display: flex;
     font-weight: 600;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 18px;
     text-decoration: none;
+    margin-bottom: 18px;
     color: var(--grey);
     width: fit-content;
     transition: 0.3s ease-in-out;
@@ -756,7 +775,7 @@ h1 {
 }
 
 .footer__links svg {
-    margin-top: 90px;
+    margin-top: 81px;
     margin-right: 25px;
     fill: var(--light-grey);
     fill: var(--light-grey);
