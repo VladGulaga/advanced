@@ -52,10 +52,6 @@ h1 {
     border-radius: 0 0 32px 32px;
 }
 
-.nav__logo {
-    margin-right: 12px;
-}
-
 .nav__left {
     display: flex;
     align-items: center;
@@ -124,8 +120,12 @@ h1 {
 
 .nav__links{
     position: relative;
+    outline: none;
 }
 
+.nav__logo {
+    outline: none;
+}
 
 .nav__links svg{
     stroke: black;
@@ -191,6 +191,7 @@ h1 {
     font-size: 23px;
     line-height: 28px;
     transition:  0.3s ease-in-out;
+    outline: none;
 }
 
 .hero__btn:focus {
@@ -272,6 +273,7 @@ h1 {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    outline: none;
 }
 
 .about__btn:focus {
@@ -401,6 +403,7 @@ h1 {
     width: fit-content;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    outline: none;
 }
 
 .stages__btn:focus {
@@ -434,6 +437,7 @@ h1 {
     width: fit-content;
     cursor: pointer;
     transition:  0.3s ease-in-out;
+    outline: none;
 }
 
 .stages__contract:focus {
@@ -566,11 +570,15 @@ h1 {
 
 .footer__first {
     background-color: var(--dark-grey);
-    padding: 20px 24px;
+    padding: 14px 24px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
     margin-bottom: 20px;
     color: var(--grey);
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .footer__first:focus {
@@ -592,9 +600,6 @@ h1 {
 }
 
 .footer__first::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
     color: var(--grey);
 }
 
@@ -602,11 +607,15 @@ h1 {
 
 .footer__second {
     background-color: var(--dark-grey) ;
-    padding: 20px 24px;
+    padding: 14px 24px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
     margin-bottom: 20px;
     color: var(--grey);
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .footer__second:focus {
@@ -628,9 +637,6 @@ h1 {
 }
 
 .footer__second::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
     color: var(--grey);
 }
 
@@ -643,6 +649,10 @@ h1 {
     margin-bottom: 25px;
     resize: none;
     color: var(--grey);
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .footer__end:focus {
@@ -665,9 +675,6 @@ h1 {
 
 
 .footer__end::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
     color: var(--grey);
 }
 
@@ -697,6 +704,7 @@ h1 {
     width: fit-content; 
     cursor: pointer;
     transition: 0.3s ease-in;
+    outline: none;
 }
 
 .footer__btn:focus {
@@ -739,6 +747,7 @@ h1 {
 
 .footer__logo {
     margin-bottom: 20px;
+    outline: none;
 }
 
 .footer__link {
@@ -771,6 +780,7 @@ h1 {
 }
 
 .footer__links {
+    outline: none;
     text-decoration: none;
 }
 
@@ -780,9 +790,11 @@ h1 {
     fill: var(--light-grey);
     fill: var(--light-grey);
     transition: 0.3s ease-in-out;
+    outline: none;
   }
   
   .footer__links:focus  svg {
+    outline: none;
     fill: var(--orange-main); 
   }
   
@@ -792,6 +804,7 @@ h1 {
   }
   
   .footer__links:active  svg {
+    outline: none;
     fill: var(--red-orange);
   } 
 
