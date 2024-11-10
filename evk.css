@@ -1,16 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 :root {
-    --orange-main:#FF9900;
-    --red-orange:#E1670E;
-    --light-orange:#FFB84D;
-    --white:#FFFFFF;
-    --grey:#CACACA;
-    --light-grey:#666666;
-    --dark-grey:#414141;
+    --orange-main: #FF9900;
+    --red-orange: #E1670E;
+    --light-orange: #FFB84D;
+    --white: #FFFFFF;
+    --grey: #CACACA;
+    --light-grey: #666666;
+    --dark-grey: #414141;
     --gap: 32px
 }
 
@@ -19,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -31,8 +30,8 @@ h1 {
     font-size: 0 !important;
     opacity: 0;
     visibility: hidden;
-  }
-  
+}
+
 .container {
     max-width: 1920px;
     width: 100%;
@@ -59,12 +58,12 @@ h1 {
 
 .nav__right {
     display: flex;
-    align-items: center ;
+    align-items: center;
+    gap: 85px;
 }
 
 .nav__link {
     position: relative;
-    margin-right: 85px;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
@@ -86,7 +85,7 @@ h1 {
     opacity: 1;
 }
 
-.nav__link::before{
+.nav__link::before {
     content: "";
     position: absolute;
     left: 0;
@@ -118,7 +117,7 @@ h1 {
     opacity: 0;
 }
 
-.nav__links{
+.nav__links {
     position: relative;
     outline: none;
 }
@@ -127,23 +126,23 @@ h1 {
     outline: none;
 }
 
-.nav__links svg{
+.nav__links svg {
     stroke: black;
-    transition:  0.3s ease;
-  }
+    transition: 0.3s ease;
+}
 
-  .nav__links:hover svg{
+.nav__links:hover svg {
     stroke: var(--orange-main);
-  }
-  
-  .nav__links:active svg {
+}
+
+.nav__links:active svg {
     outline-offset: 2px;
     outline: 2px solid var(--orange-main);
-  }
-  
-  .nav__links:active svg {
+}
+
+.nav__links:active svg {
     stroke: black;
-  }
+}
 
 
 .hero__face {
@@ -154,7 +153,7 @@ h1 {
     background: url(img/low-angle-photo-of-balconies-2462015.jpg) center/cover no-repeat;
     margin-top: 50px;
     border-radius: 32px;
-    
+
 }
 
 
@@ -162,6 +161,7 @@ h1 {
 .hero__head {
     display: flex;
     align-items: flex-end;
+    max-width: 837px;
     margin-bottom: 24px;
     font-size: 70px;
     font-weight: 800;
@@ -172,6 +172,7 @@ h1 {
 .hero__text {
     display: flex;
     align-items: flex-end;
+    max-width: 790px;
     margin-bottom: 90px;
     font-weight: 700;
     font-size: 24px;
@@ -190,7 +191,7 @@ h1 {
     font-weight: 700;
     font-size: 23px;
     line-height: 28px;
-    transition:  0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     outline: none;
 }
 
@@ -221,6 +222,7 @@ h1 {
 }
 
 .about__description {
+    max-width: 1235px;
     margin-bottom: 50px;
     font-weight: 400;
     font-size: 16px;
@@ -257,6 +259,7 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 32px;
+    max-width: 433px;
     color: var(--white);
 }
 
@@ -279,7 +282,7 @@ h1 {
 .about__btn:focus {
     color: var(--white);
     background-color: var(--orange-main);
-    border: 3px solid  var(--orange-main);
+    border: 3px solid var(--orange-main);
 }
 
 .about__btn:hover {
@@ -301,15 +304,14 @@ h1 {
 
 .about__cube {
     display: flex;
-    flex-wrap: wrap;
-    border: 1px solid var(--grey) ;
+    border: 1px solid var(--grey);
     border-radius: 32px;
     padding: 65px 60px;
     margin-bottom: 32px;
 }
 
 .about__cube:last-child {
-    margin:0;
+    margin: 0;
 }
 
 .about__img {
@@ -318,6 +320,7 @@ h1 {
 }
 
 .about__flex {
+    display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
@@ -330,6 +333,7 @@ h1 {
 }
 
 .about__descrip {
+    max-width: 450px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -337,7 +341,7 @@ h1 {
 
 
 .stages__flex {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
 }
 
@@ -378,6 +382,7 @@ h1 {
 }
 
 .stages__description {
+    max-width: 758px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -386,7 +391,7 @@ h1 {
 
 .stages__btns {
     display: flex;
-    
+
 }
 
 .stages__btn {
@@ -436,7 +441,7 @@ h1 {
     padding: 20px 38px;
     width: fit-content;
     cursor: pointer;
-    transition:  0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     outline: none;
 }
 
@@ -552,17 +557,17 @@ h1 {
     width: 14px;
     height: 14px;
     transform: translateY(-50%);
-    background:  center no-repeat  url(img/checkbox.svg);
+    background: center no-repeat url(img/checkbox.svg);
     background-size: 70%;
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.footer__box:checked + .footer__textbox::after {
+.footer__box:checked+.footer__textbox::after {
     opacity: 1;
 }
 
-.footer__box:focus + .footer__textbox{
+.footer__box:focus+.footer__textbox {
     outline: 1px solid var(--orange-main);
     outline-offset: 3px;
 }
@@ -606,7 +611,7 @@ h1 {
 
 
 .footer__second {
-    background-color: var(--dark-grey) ;
+    background-color: var(--dark-grey);
     padding: 14px 24px;
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
@@ -641,7 +646,7 @@ h1 {
 }
 
 .footer__end {
-    background-color: var(--dark-grey) ;
+    background-color: var(--dark-grey);
     padding: 14px 24px;
     min-height: 158px;
     border: 1px solid var(--dark-grey);
@@ -701,11 +706,12 @@ h1 {
     color: var(--white);
     border-radius: 16px;
     padding: 19px 52px;
-    width: fit-content; 
+    width: fit-content;
     cursor: pointer;
     transition: 0.3s ease-in;
     outline: none;
 }
+
 
 .footer__btn:focus {
     color: var(--white);
@@ -791,30 +797,29 @@ h1 {
     fill: var(--light-grey);
     transition: 0.3s ease-in-out;
     outline: none;
-  }
-  
-  .footer__links:focus  svg {
-    outline: none;
-    fill: var(--orange-main); 
-  }
-  
-  .footer__links:hover  svg{
-    outline-offset: 2px;
-    outline: 2px solid var(--orange-main);
-  }
-  
-  .footer__links:active  svg {
-    outline: none;
-    fill: var(--red-orange);
-  } 
-
-  
-
-.footer__right {
-    
 }
 
+.footer__links:focus svg {
+    outline: none;
+    fill: var(--orange-main);
+}
+
+.footer__links:hover svg {
+    outline-offset: 2px;
+    outline: 2px solid var(--orange-main);
+}
+
+.footer__links:active svg {
+    outline: none;
+    fill: var(--red-orange);
+}
+
+
+
+.footer__right {}
+
 .footer__text {
+    max-width: 363px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
