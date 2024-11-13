@@ -81,6 +81,10 @@
         margin-top: 80px;
     }
 
+    .stages__right {
+        width: 47%;
+    }
+
     .stages__description {
         max-width: 437px;
     }
@@ -100,6 +104,10 @@
         min-height: 100%;
     }
 
+    .footer__cont {
+        margin-top: 78px;
+    }
+
     .footer__left {
         width: 30%;
     }
@@ -110,6 +118,10 @@
 
     .footer__second {
         margin-bottom: 25px;
+    }
+
+    .footer__end {
+        min-height: 151px;
     }
 
     .footer__btn {
@@ -484,10 +496,10 @@
     .stages__img {
         min-height: 160px;
         border-radius: 16px;
-        margin-bottom: 16px;
     }
 
     .stages__titles {
+        margin-top: 16px;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
@@ -499,6 +511,7 @@
         line-height: 28px;
         margin-bottom: 24px;
     }
+
 
     .stages__btn {
         border-radius: 8px;
@@ -577,6 +590,7 @@
         padding: 14px 20px;
         min-height: 150px;
         height: 100%;
+        margin-bottom: 22px;
     }
 
     .footer__btnbox {
@@ -609,6 +623,7 @@
     }
 
     .footer__links svg {
+        margin-top: 12px;
         max-width: 40px;
         margin-right: 0;
     }
@@ -619,7 +634,7 @@
 
     .footer__label {
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 36px;
     }
 
 
