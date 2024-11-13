@@ -251,11 +251,16 @@ h1 {
 .about__darken {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 52px 50px;
     border-radius: 32px;
     background: rgba(0, 0, 0, 0.4);
+}
+
+.about__meadiacube {
+    width: 100%;
 }
 
 .about__empty {
