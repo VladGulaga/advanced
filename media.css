@@ -393,7 +393,7 @@
     }
 
     .hero__face {
-        max-height: 308px;
+        min-height: 308px;
         align-items: center;
         background: url(img/low-angle-photo-of-balconies-768.jpg) center/cover no-repeat;
         padding: 60px 20px;
