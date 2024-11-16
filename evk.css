@@ -455,6 +455,7 @@ h1 {
     cursor: pointer;
     transition: 0.3s ease-in-out;
     outline: none;
+    color: black;
 }
 
 .stages__contract:focus {
